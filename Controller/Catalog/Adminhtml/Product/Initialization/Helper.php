@@ -206,7 +206,7 @@ class Helper extends \Magento\Catalog\Controller\Adminhtml\Product\Initializatio
             }
         }
 
-        $currentStoreId = $_POST['product']['current_store_id'] ?? 0;
+        $currentStoreId = isset($_POST['product']['current_store_id']) ? $_POST['product']['current_store_id'] : 0;
 
         if (intval($currentStoreId) != 0 && $product->getId()) {
 
