@@ -11,3 +11,10 @@ OSL 3.0
 For user guide & full details see: https://www.cadence-labs.com/2018/03/magento-2-use-default-value-store-view-scope-fix/
 
 
+## Installation
+
+### Composer
+
+```bash
+$ composer config repositories.cadencelabs-magento2-scope-fix vcs https://github.com/augustash/magento2-scope-fix.git
+$ composer require cadencelabs/magento2-scope-fix:dev-master
